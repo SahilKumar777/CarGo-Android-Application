@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="car_property_details">#78858C</color>
+    <color name="car_property_head">#123456</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#A86208</color>
+    <color name="dot_dark_screen2">#432F73</color>
+    <color name="dot_dark_screen3">#454A55</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#FD3503</color>
+    <color name="dot_light_screen2">#FF03A3</color>
+    <color name="dot_light_screen3">#F11FB5</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+    <!--  Home  -->
+    <color name="home_widget_background">#E9F5D5FF</color>
+    <color name="home_widget_title">#AD15E4</color>
+    <color name="home_widget_subtitle">#057DF1</color>
+
+</resources>

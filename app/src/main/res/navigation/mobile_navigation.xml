@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navdrawer.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_my_bookings"
+        android:name="com.example.navdrawer.ui.myBookings.MyBookings"
+        android:label="My Bookings"
+        tools:layout="@layout/fragment_my_bookings" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.navdrawer.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.example.navdrawer.ui.AboutUs.AboutUsFragment"
+        android:label="AboutUs"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/nav_policy"
+        android:name="com.example.navdrawer.ui.privacyPolicy.PrivacyPolicyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+</navigation>
