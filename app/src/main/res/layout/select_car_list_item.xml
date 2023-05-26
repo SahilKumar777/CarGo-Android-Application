@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+
+   >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="2dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/carImage"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        app:failureImage="@drawable/car_no_image"
+        app:placeholderImage="@drawable/car_image_placeholder"
+        app:layout_constraintTop_toBottomOf="@id/carCompany"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/carName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_200"
+        android:layout_marginHorizontal="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/carCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Company"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:rating="4.5"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        android:translationX="-46dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carCo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charge: ₹30 per km"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:paddingHorizontal="8dp"
+        android:textColor="#F119B4"
+        app:layout_constraintTop_toBottomOf="@id/carName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 Seater"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="8dp"
+        android:drawableLeft="@drawable/ic_seat_normal_24"
+        app:layout_constraintTop_toBottomOf="@id/carCo"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full AC"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="8dp"
+        android:drawableLeft="@drawable/ic_air_24"
+        app:layout_constraintTop_toBottomOf="@id/carCo"
+        app:layout_constraintStart_toEndOf="@id/seats"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luxury"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="8dp"
+        android:drawableLeft="@drawable/ic_seat_normal_24"
+        app:layout_constraintTop_toBottomOf="@id/seats"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automatic"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:paddingHorizontal="8dp"
+        android:drawableLeft="@drawable/ic_air_24"
+        app:layout_constraintTop_toBottomOf="@id/seats"
+        app:layout_constraintStart_toEndOf="@id/type"/>
+    <TextView
+        android:id="@+id/Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs 30 per km"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#EF25A4"
+        android:layout_marginHorizontal="8dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/carImage"/>
+    <TextView
+        android:id="@+id/leftButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:padding="6dp"
+        android:background="#C457EC"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/carImage"
+        app:layout_constraintEnd_toStartOf="@id/rightButton"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/rightButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:padding="6dp"
+        android:background="#22A9F3"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/carImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/leftButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
